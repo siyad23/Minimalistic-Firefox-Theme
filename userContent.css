@@ -1,0 +1,13 @@
+@-moz-document url(about:home),url-prefix(about:newtab){
+    body{
+        background: center no-repeat url(wall.jpg) !important;
+    }
+
+    main{
+        display: none !important;
+    }
+
+    .icon-settings{
+        display: none !important;
+    }
+}
