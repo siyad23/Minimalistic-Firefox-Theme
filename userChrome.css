@@ -17,8 +17,8 @@
 }
 
 /* MIN MAX CLOSE Remove */
-#TabsToolbar > .titlebar-buttonbox-container {
-  height: 20px;
+#TabsToolbar>.titlebar-buttonbox-container {
+  height: 40px;
 }
 
 .titlebar-button {
@@ -29,7 +29,8 @@
 /*Basic Settings*/
 
 :root {
-  --navbarWidth: 540px; /* Set width of navbar. Use px for a fixed width 
+  --navbarWidth: 540px;
+  /* Set width of navbar. Use px for a fixed width 
                                 or vw for a percentage of your window. */
   --animationSpeed: 0.15s;
 }
@@ -101,7 +102,7 @@
   border: none !important;
 }
 
-#urlbar:not(:hover):not([breakout][breakout-extend]) > #urlbar-background {
+#urlbar:not(:hover):not([breakout][breakout-extend])>#urlbar-background {
   box-shadow: none !important;
   background: #272727 !important;
 }
@@ -154,14 +155,15 @@ tab[selected="true"] .tab-content {
   color: rgba(var(--secondary-accent-color), 1) !important;
 }
 
-tab[selected="true"] > .tab-stack > .tab-background {
+tab[selected="true"]>.tab-stack>.tab-background {
   background: rgb(59, 59, 59) !important;
 }
-.tabbrowser-tab > .tab-stack > .tab-background:not([selected="true"]) {
+
+.tabbrowser-tab>.tab-stack>.tab-background:not([selected="true"]) {
   transition: all 0.3s ease !important;
 }
 
-.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected="true"]) {
+.tabbrowser-tab:hover>.tab-stack>.tab-background:not([selected="true"]) {
   border-right: 1px solid rgb(83, 83, 83) !important;
   border-left: 1px solid rgb(83, 83, 83) !important;
 }
